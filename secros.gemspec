@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'secros'
-  s.version = '0.1.3'
+  s.version = '0.1.6'
   s.authors = ['Tetsuri Moriya']
   s.email = ['tetsuri.moriya@gmail.com']
   s.summary = 'Secrets management gem'
@@ -9,6 +9,6 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
   s.files = `git ls-files`.split("\n")
   s.executables = ['secros']
-  s.add_development_dependency 'rspec', '>= 0', '< 1000'
-  s.add_runtime_dependency 'activesupport', '>= 0', '< 1000'
+  s.add_development_dependency 'rspec', '~> 0'
+  s.add_runtime_dependency 'activesupport', '~> 0'
 end
