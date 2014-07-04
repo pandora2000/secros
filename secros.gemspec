@@ -10,4 +10,5 @@ Gem::Specification.new do |s|
   s.files = `git ls-files`.split("\n")
   s.executables = ['secros']
   s.add_development_dependency 'rspec', '~> 0'
+  s.add_runtime_dependency 'activesupport', '~> 0'
 end
