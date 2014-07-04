@@ -8,5 +8,5 @@ Gem::Specification.new do |s|
   s.homepage = 'https://bitbucket.org/pandora2000/secros'
   s.license = 'MIT'
   s.files = `git ls-files`.split("\n")
-  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'rspec', '~> 0'
 end
