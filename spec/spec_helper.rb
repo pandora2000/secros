@@ -3,6 +3,6 @@ Bundler.setup
 
 require 'secros'
 
-RSpec.configure do |config|
-  # some (optional) config here
+def root_path
+  File.expand_path('../..', __FILE__)
 end
