@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'secros'
-  s.version = '0.1.0'
+  s.version = '0.1.1'
   s.authors = ['Tetsuri Moriya']
   s.email = ['tetsuri.moriya@gmail.com']
   s.summary = 'Secrets management gem'
@@ -8,5 +8,6 @@ Gem::Specification.new do |s|
   s.homepage = 'https://bitbucket.org/pandora2000/secros'
   s.license = 'MIT'
   s.files = `git ls-files`.split("\n")
+  s.executables = ['secros']
   s.add_development_dependency 'rspec', '~> 0'
 end
