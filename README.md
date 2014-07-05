@@ -37,9 +37,9 @@ gem 'secros'
 
 also `gem install secros` and `require 'secros'` works.
 
-###STEP 2. Access secrets via key
+####STEP 2. Access secrets via key
 
 ```rb
 Secros.new(your_generate_path).values[:aws_secret_key] # == 'aws_secret_key_value'
-Secros.new(your_generate_path).files[:ssh_identity]) # == "#{your_generate_path}/files/id_rsa}"
+Secros.new(your_generate_path).files[:ssh_identity]) # == "#{your_generate_path}/files/id_rsa"
 ```
