@@ -8,8 +8,8 @@ describe 'test' do
     `ruby #{File.join(root_path, 'lib', 'generate.rb')} #{generate_path}`
     `cp #{File.join(root_path, 'spec', 'secrets.yml')} #{generate_path}/secrets.yml`
     secros = Secros.new(generate_path)
-    secros.value(:test_key).should eq('test_value')
-    secros.file(:test_file_key).should eq("#{generate_path}/files/test_file_value")
+    secros.values[:test_key].should eq('test_value')
+    secros.files[:test_file_key].should eq("#{generate_path}/files/test_file_value")
     `rm -rf #{generate_path}`
   end
 end

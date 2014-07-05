@@ -15,16 +15,16 @@ gem install secros
 ####STEP 2. Generate template
 
 ```bash
-secros your_generate_path
+secros your-generate-path
 ```
 
 ####STEP 2. Add secrets to secrets.yml
 
 ```yml
 values:
-  key: value
+  aws_secret_key: aws_secret_key_value
 files:
-  file: file_name
+  ssh_identity: id_rsa
 ```
 
 ###Access secrets
@@ -40,6 +40,6 @@ also `gem install secros` and `require 'secros'` works.
 ###STEP 2. Access secrets via key
 
 ```rb
-Secros.new(your_generate_path).values(:key) # == 'value'
-Secros.new(your_generate_path).files(:file) # == "#{your_generate_path}/files/file_name}"
+Secros.new(your_generate_path).values[:aws_secret_key] # == 'aws_secret_key_value'
+Secros.new(your_generate_path).files[:ssh_identity]) # == "#{your_generate_path}/files/id_rsa}"
 ```
