@@ -18,7 +18,7 @@ gem install secros
 secros your-generate-path
 ```
 
-####STEP 2. Add secrets to secrets.yml
+####STEP 3. Add secrets to secrets.yml
 
 ```yml
 values:
