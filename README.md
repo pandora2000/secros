@@ -1,24 +1,24 @@
-##DESCRIPTION
+## DESCRIPTION
 
 Secros enables you to manage your secret values in one place.
 
-##USAGE
+## USAGE
 
-###Make secrets
+### Make secrets
 
-####STEP 1. Install secros
+#### STEP 1. Install secros
 
 ```bash
 gem install secros
 ```
 
-####STEP 2. Generate template
+#### STEP 2. Generate template
 
 ```bash
 secros your-generate-path
 ```
 
-####STEP 3. Add secrets to secrets.yml
+#### STEP 3. Add secrets to secrets.yml
 
 ```yml
 values:
@@ -27,9 +27,9 @@ files:
   ssh_identity: id_rsa
 ```
 
-###Access secrets
+### Access secrets
 
-####STEP 1. Add secros to Gemfile
+#### STEP 1. Add secros to Gemfile
 
 ```rb
 gem 'secros'
@@ -37,7 +37,7 @@ gem 'secros'
 
 also `gem install secros` and `require 'secros'` works.
 
-####STEP 2. Access secrets via key
+#### STEP 2. Access secrets via key
 
 ```rb
 Secros.new(your_generate_path).values[:aws_secret_key] # == 'aws_secret_key_value'
